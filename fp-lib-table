@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name 1088BS)(type KiCad)(uri "$(KIPRJMOD)/1088BS.pretty")(options "")(descr ""))
+  (lib (name Kurzhubtaster)(type KiCad)(uri "$(KIPRJMOD)/Kurzhubtaster.pretty")(options "")(descr ""))
+  (lib (name C_Disc_D3_P5)(type KiCad)(uri "$(KIPRJMOD)/C_Disc_D3_P5.pretty")(options "")(descr ""))
+)
