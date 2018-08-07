@@ -59,12 +59,12 @@ $EndComp
 $Comp
 L Battery_Cell BT1
 U 1 1 5B1FE947
-P 1800 3300
-F 0 "BT1" H 1900 3400 50  0000 L CNN
-F 1 "Battery_Cell" H 1900 3300 50  0000 L CNN
-F 2 "1088BS:Knopfzellenclip_20mm" V 1800 3360 50  0001 C CNN
-F 3 "" V 1800 3360 50  0000 C CNN
-	1    1800 3300
+P 2000 3550
+F 0 "BT1" H 2100 3650 50  0000 L CNN
+F 1 "Battery_Cell" H 2100 3550 50  0000 L CNN
+F 2 "1088BS:Knopfzellenclip_20mm" V 2000 3610 50  0001 C CNN
+F 3 "" V 2000 3610 50  0000 C CNN
+	1    2000 3550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -103,12 +103,12 @@ $EndComp
 $Comp
 L CONN_01X02 P2
 U 1 1 5B1FEAB0
-P 2650 3250
-F 0 "P2" H 2650 3400 50  0000 C CNN
-F 1 "SUPPLY" H 2650 3100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2650 3250 50  0001 C CNN
-F 3 "" H 2650 3250 50  0000 C CNN
-	1    2650 3250
+P 2450 2600
+F 0 "P2" H 2450 2750 50  0000 C CNN
+F 1 "SUPPLY" H 2700 2600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2450 2600 50  0001 C CNN
+F 3 "" H 2450 2600 50  0000 C CNN
+	1    2450 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -305,9 +305,7 @@ Wire Wire Line
 Connection ~ 4800 4550
 Connection ~ 4900 4650
 Wire Wire Line
-	5650 2900 4900 2900
-Wire Wire Line
-	4900 2900 4900 4650
+	4900 2800 4900 4650
 Wire Wire Line
 	4800 2700 5650 2700
 Wire Wire Line
@@ -320,7 +318,7 @@ Wire Wire Line
 	6350 2800 6150 2800
 Text GLabel 5500 5400 2    39   Input ~ 0
 RESET
-Text GLabel 5650 2800 0    39   Input ~ 0
+Text GLabel 5650 2900 0    39   Input ~ 0
 RESET
 $Comp
 L VCC #PWR06
@@ -412,10 +410,6 @@ F 3 "" H 750 3400 50  0000 C CNN
 	1    750  3400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	750  3400 2450 3400
-Wire Wire Line
-	750  3100 2450 3100
 Connection ~ 1500 3100
 Connection ~ 1500 3400
 Wire Wire Line
@@ -444,12 +438,6 @@ F 3 "" H 6300 5600 50  0000 C CNN
 	1    6300 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 3400 2450 3300
-Connection ~ 1800 3400
-Wire Wire Line
-	2450 3100 2450 3200
-Connection ~ 1800 3100
 $Comp
 L CP C1
 U 1 1 5B217558
@@ -478,4 +466,51 @@ Text Notes 650  1100 0    60   ~ 0
 Mounting Hole
 NoConn ~ 4600 4750
 NoConn ~ 4600 4850
+Wire Wire Line
+	4900 2800 5650 2800
+Wire Wire Line
+	750  3100 1900 3100
+$Comp
+L Jumper_NC_Dual JP1
+U 1 1 5B69D10C
+P 2000 3100
+F 0 "JP1" V 1900 3250 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 2050 3550 50  0000 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2000 3100 50  0001 C CNN
+F 3 "" H 2000 3100 50  0000 C CNN
+	1    2000 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	750  3400 1500 3400
+Wire Wire Line
+	2000 3350 2000 3350
+$Comp
+L GND #PWR013
+U 1 1 5B69D513
+P 2000 3650
+F 0 "#PWR013" H 2000 3400 50  0001 C CNN
+F 1 "GND" H 2000 3500 50  0000 C CNN
+F 2 "" H 2000 3650 50  0000 C CNN
+F 3 "" H 2000 3650 50  0000 C CNN
+	1    2000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5B69D5C4
+P 2250 2650
+F 0 "#PWR014" H 2250 2400 50  0001 C CNN
+F 1 "GND" H 2250 2500 50  0000 C CNN
+F 2 "" H 2250 2650 50  0000 C CNN
+F 3 "" H 2250 2650 50  0000 C CNN
+	1    2250 2650
+	1    0    0    -1  
+$EndComp
+Text Notes 600  2300 0    60   ~ 0
+The power supply can be switched between button cell \nand external power supply with a jumper 
+Wire Wire Line
+	2000 2850 2000 2550
+Wire Wire Line
+	2000 2550 2250 2550
 $EndSCHEMATC

@@ -29,3 +29,5 @@ _autosave-*
 .directory
 Gerber/*
 PDF/*
+3D/*
+SVG/*
