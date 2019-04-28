@@ -37,8 +37,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Macher Daach Badge"
-Date "2018-06-30"
-Rev "v1.0"
+Date "2018-08-23"
+Rev "v2.0"
 Comp ""
 Comment1 ""
 Comment2 ""

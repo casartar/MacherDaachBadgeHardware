@@ -1,4 +1,4 @@
-update=Do 28 Jun 2018 21:06:07 CEST
+update=Do 23 Aug 2018 21:07:06 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -61,3 +59,5 @@ LibName29=valves
 LibName30=switches
 LibName31=lib/1088bs
 LibName32=1088BS.pretty/1088BS
+[general]
+version=1
