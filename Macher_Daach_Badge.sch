@@ -1,44 +1,13 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:switches
-LIBS:1088bs
+EESchema Schematic File Version 4
 LIBS:Macher_Daach_Badge-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Macher Daach Badge"
-Date "2018-08-23"
-Rev "v2.0"
+Date "2019-05-25"
+Rev "v3.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA328P-P IC1
+L Macher_Daach_Badge-rescue:ATMEGA328P-P IC1
 U 1 1 5B1FE8AE
 P 3600 5250
 F 0 "IC1" H 2850 6500 50  0000 L BNN
@@ -57,18 +26,18 @@ F 3 "" H 3600 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Battery_Cell BT1
+L Macher_Daach_Badge-rescue:Battery_Cell BT1
 U 1 1 5B1FE947
-P 2000 3550
-F 0 "BT1" H 2100 3650 50  0000 L CNN
-F 1 "Battery_Cell" H 2100 3550 50  0000 L CNN
-F 2 "1088BS:Knopfzellenclip_20mm" V 2000 3610 50  0001 C CNN
-F 3 "" V 2000 3610 50  0000 C CNN
-	1    2000 3550
+P 2300 3600
+F 0 "BT1" H 2400 3700 50  0000 L CNN
+F 1 "Battery_Cell" H 2400 3600 50  0000 L CNN
+F 2 "1088BS:Knopfzellenclip_20mm" V 2300 3660 50  0001 C CNN
+F 3 "" V 2300 3660 50  0000 C CNN
+	1    2300 3600
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR01
+L power:VCC #PWR01
 U 1 1 5B1FE9DE
 P 2700 4150
 F 0 "#PWR01" H 2700 4000 50  0001 C CNN
@@ -79,7 +48,7 @@ F 3 "" H 2700 4150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 5B1FE9F6
 P 2700 6450
 F 0 "#PWR02" H 2700 6200 50  0001 C CNN
@@ -90,7 +59,7 @@ F 3 "" H 2700 6450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X03 P3
+L Macher_Daach_Badge-rescue:CONN_02X03 P3
 U 1 1 5B1FEA45
 P 5900 2800
 F 0 "P3" H 5900 3000 50  0000 C CNN
@@ -101,18 +70,18 @@ F 3 "" H 5900 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P2
+L Macher_Daach_Badge-rescue:CONN_01X02 P2
 U 1 1 5B1FEAB0
-P 2450 2600
-F 0 "P2" H 2450 2750 50  0000 C CNN
-F 1 "SUPPLY" H 2700 2600 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2450 2600 50  0001 C CNN
-F 3 "" H 2450 2600 50  0000 C CNN
-	1    2450 2600
+P 2750 2750
+F 0 "P2" H 2750 2900 50  0000 C CNN
+F 1 "SUPPLY" H 3000 2750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2750 2750 50  0001 C CNN
+F 3 "" H 2750 2750 50  0000 C CNN
+	1    2750 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P4
+L Macher_Daach_Badge-rescue:CONN_01X04 P4
 U 1 1 5B1FEB45
 P 6150 5400
 F 0 "P4" V 6150 5700 50  0000 C CNN
@@ -123,7 +92,7 @@ F 3 "" H 6150 5400 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_Push_Dual SW2
+L Macher_Daach_Badge-rescue:SW_Push_Dual SW2
 U 1 1 5B1FEBD1
 P 6450 4250
 F 0 "SW2" H 6500 4350 50  0000 L CNN
@@ -134,7 +103,7 @@ F 3 "" H 6450 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_Push_Dual SW1
+L Macher_Daach_Badge-rescue:SW_Push_Dual SW1
 U 1 1 5B1FECA4
 P 6450 3650
 F 0 "SW1" H 6500 3750 50  0000 L CNN
@@ -145,7 +114,7 @@ F 3 "" H 6450 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L Macher_Daach_Badge-rescue:R R1
 U 1 1 5B1FECE6
 P 5100 5450
 F 0 "R1" H 5150 5500 50  0000 L CNN
@@ -156,7 +125,7 @@ F 3 "" H 5100 5450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L Macher_Daach_Badge-rescue:C C2
 U 1 1 5B1FEE64
 P 1500 3250
 F 0 "C2" H 1525 3350 50  0000 L CNN
@@ -167,7 +136,7 @@ F 3 "" H 1500 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L Macher_Daach_Badge-rescue:C C3
 U 1 1 5B1FEECB
 P 5650 5600
 F 0 "C3" V 5700 5400 50  0000 L CNN
@@ -178,7 +147,7 @@ F 3 "" H 5650 5600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 1088BS D1
+L 1088bs:1088BS D1
 U 1 1 5B21057B
 P 8750 4150
 F 0 "D1" H 7950 3250 60  0000 C CNN
@@ -189,10 +158,10 @@ F 3 "" H 7850 4700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 4150 2700 4750
+	2700 4150 2700 4450
 Connection ~ 2700 4450
 $Comp
-L VCC #PWR03
+L power:VCC #PWR03
 U 1 1 5B210E55
 P 1500 3100
 F 0 "#PWR03" H 1500 2950 50  0001 C CNN
@@ -203,7 +172,7 @@ F 3 "" H 1500 3100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 5B211030
 P 1500 3400
 F 0 "#PWR04" H 1500 3150 50  0001 C CNN
@@ -280,7 +249,7 @@ LED_Y7
 Wire Wire Line
 	2700 6350 2700 6450
 $Comp
-L VCC #PWR05
+L power:VCC #PWR05
 U 1 1 5B2125FC
 P 5100 5300
 F 0 "#PWR05" H 5100 5150 50  0001 C CNN
@@ -291,15 +260,15 @@ F 3 "" H 5100 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 4650 5000 4650
+	4600 4650 4900 4650
 Wire Wire Line
-	4600 4550 5000 4550
+	4600 4550 4800 4550
 Wire Wire Line
 	4600 4250 5000 4250
 Wire Wire Line
 	4600 4150 5000 4150
 Wire Wire Line
-	4600 4450 6250 4450
+	4600 4450 4700 4450
 Wire Wire Line
 	4800 2700 4800 4550
 Connection ~ 4800 4550
@@ -321,7 +290,7 @@ RESET
 Text GLabel 5650 2900 0    39   Input ~ 0
 RESET
 $Comp
-L VCC #PWR06
+L power:VCC #PWR06
 U 1 1 5B213380
 P 6150 2700
 F 0 "#PWR06" H 6150 2550 50  0001 C CNN
@@ -332,7 +301,7 @@ F 3 "" H 6150 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 5B2133FB
 P 6350 2900
 F 0 "#PWR07" H 6350 2650 50  0001 C CNN
@@ -367,7 +336,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 4250 6650 4450
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 5B214058
 P 6800 3850
 F 0 "#PWR08" H 6800 3600 50  0001 C CNN
@@ -378,7 +347,7 @@ F 3 "" H 6800 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 5B21408D
 P 6800 4450
 F 0 "#PWR09" H 6800 4200 50  0001 C CNN
@@ -389,7 +358,7 @@ F 3 "" H 6800 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG010
+L power:PWR_FLAG #FLG010
 U 1 1 5B2140B6
 P 750 3100
 F 0 "#FLG010" H 750 3195 50  0001 C CNN
@@ -400,7 +369,7 @@ F 3 "" H 750 3100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG011
+L power:PWR_FLAG #FLG011
 U 1 1 5B214170
 P 750 3400
 F 0 "#FLG011" H 750 3495 50  0001 C CNN
@@ -413,7 +382,7 @@ $EndComp
 Connection ~ 1500 3100
 Connection ~ 1500 3400
 Wire Wire Line
-	4600 5600 5500 5600
+	4600 5600 5100 5600
 Connection ~ 5100 5600
 Wire Wire Line
 	5350 5600 5350 5400
@@ -428,7 +397,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 5750 6200 5600
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 5B215CA0
 P 6300 5600
 F 0 "#PWR012" H 6300 5350 50  0001 C CNN
@@ -439,7 +408,7 @@ F 3 "" H 6300 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C1
+L Macher_Daach_Badge-rescue:CP C1
 U 1 1 5B217558
 P 1100 3250
 F 0 "C1" H 1125 3350 50  0000 L CNN
@@ -450,7 +419,7 @@ F 3 "" H 1100 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X01 P1
+L Macher_Daach_Badge-rescue:CONN_01X01 P1
 U 1 1 5B35615E
 P 1000 1300
 F 0 "P1" H 1000 1400 50  0000 C CNN
@@ -469,48 +438,67 @@ NoConn ~ 4600 4850
 Wire Wire Line
 	4900 2800 5650 2800
 Wire Wire Line
-	750  3100 1900 3100
-$Comp
-L Jumper_NC_Dual JP1
-U 1 1 5B69D10C
-P 2000 3100
-F 0 "JP1" V 1900 3250 50  0000 L CNN
-F 1 "Jumper_NC_Dual" V 2050 3550 50  0000 C BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2000 3100 50  0001 C CNN
-F 3 "" H 2000 3100 50  0000 C CNN
-	1    2000 3100
-	0    1    1    0   
-$EndComp
+	750  3100 1100 3100
 Wire Wire Line
-	750  3400 1500 3400
-Wire Wire Line
-	2000 3350 2000 3350
+	750  3400 1100 3400
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 5B69D513
-P 2000 3650
-F 0 "#PWR013" H 2000 3400 50  0001 C CNN
-F 1 "GND" H 2000 3500 50  0000 C CNN
-F 2 "" H 2000 3650 50  0000 C CNN
-F 3 "" H 2000 3650 50  0000 C CNN
-	1    2000 3650
+P 2300 3700
+F 0 "#PWR013" H 2300 3450 50  0001 C CNN
+F 1 "GND" H 2300 3550 50  0000 C CNN
+F 2 "" H 2300 3700 50  0000 C CNN
+F 3 "" H 2300 3700 50  0000 C CNN
+	1    2300 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 5B69D5C4
-P 2250 2650
-F 0 "#PWR014" H 2250 2400 50  0001 C CNN
-F 1 "GND" H 2250 2500 50  0000 C CNN
-F 2 "" H 2250 2650 50  0000 C CNN
-F 3 "" H 2250 2650 50  0000 C CNN
-	1    2250 2650
+P 2550 2800
+F 0 "#PWR014" H 2550 2550 50  0001 C CNN
+F 1 "GND" H 2550 2650 50  0000 C CNN
+F 2 "" H 2550 2800 50  0000 C CNN
+F 3 "" H 2550 2800 50  0000 C CNN
+	1    2550 2800
 	1    0    0    -1  
 $EndComp
 Text Notes 600  2300 0    60   ~ 0
 The power supply can be switched between button cell \nand external power supply with a jumper 
 Wire Wire Line
-	2000 2850 2000 2550
+	2300 3000 2300 2700
 Wire Wire Line
-	2000 2550 2250 2550
+	2300 2700 2550 2700
+Wire Wire Line
+	2700 4450 2700 4750
+Wire Wire Line
+	4800 4550 5000 4550
+Wire Wire Line
+	4900 4650 5000 4650
+Wire Wire Line
+	5350 5600 5500 5600
+Wire Wire Line
+	4700 4450 6250 4450
+Wire Wire Line
+	1500 3100 1900 3100
+Wire Wire Line
+	5100 5600 5350 5600
+Wire Wire Line
+	1100 3100 1500 3100
+Wire Wire Line
+	1100 3400 1500 3400
+Wire Wire Line
+	2300 3400 2300 3200
+$Comp
+L Switch:SW_SPDT SW3
+U 1 1 5CCEDE61
+P 2100 3100
+F 0 "SW3" H 1800 3400 50  0000 L CNN
+F 1 "Power Switch" H 1800 3300 50  0000 L CNN
+F 2 "ESP101:ESP101" H 2100 3100 50  0001 C CNN
+F 3 "" H 2100 3100 50  0001 C CNN
+	1    2100 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 800  1300
 $EndSCHEMATC
