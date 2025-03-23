@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name Macher_Daach_Badge-rescue)(type Legacy)(uri ${KIPRJMOD}/Macher_Daach_Badge-rescue.lib)(options "")(descr ""))
-  (lib (name 1088bs)(type Legacy)(uri ${KIPRJMOD}/lib/1088bs.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "Macher_Daach_Badge-rescue")(type "KiCad")(uri "${KIPRJMOD}/Macher_Daach_Badge-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "1088bs")(type "Legacy")(uri "${KIPRJMOD}/lib/1088bs.lib")(options "")(descr ""))
 )
