@@ -41,7 +41,7 @@ fp-info-cache
 
 # Misc
 .directory
-Gerber/*
 PDF/*
 3D/*
 SVG/*
+production/*
